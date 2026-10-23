@@ -1,0 +1,284 @@
+:root{
+  --rose:#fb8c9c;
+  --bleu:#213d50;
+  --gris:#666
+}
+
+  box-sizing:border-box
+
+body {
+  margin:0;font-family:"Open Sans",sans-serif;
+  color:var(--gris);background:#fff
+}
+h1,h2,h3,nav a,.commander,.prix{font-family:"Candal",sans-serif}
+a{text-decoration:none}
+
+.banniere {
+  background: url("background.jpg") center / cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.barre {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  min-height:250px;padding:0 6%
+}
+.logo img {
+  display:block;width:115px;
+  height:auto
+}
+header nav {
+  flex:1;margin-left:4%
+}
+header nav ul {
+  display:flex;
+  justify-content:space-around;
+  margin:0;padding:0;
+  list-style:none
+}
+header nav a {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  font-size:1.3em;
+  color:var(--bleu)
+}
+header nav i{
+  font-size:1.6em;
+  color:var(--rose)
+}
+header nav a:hover,header nav a.actif{
+  color:var(--rose)
+}
+header nav a:hover i,header nav a.actif i{
+  color:var(--bleu)
+}
+.hero{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:560px;
+  padding:40px 5%;
+  text-align:center;
+  color:#fff;
+  background:url("img/background.jpg") center/cover no-repeat;
+  text-shadow:2px 2px 4px rgba(0,0,0,.6)
+}
+header h1{
+  margin:0 0 30px;
+  font-size:3em
+}
+header p {
+  margin:0;
+  font-size:2em;
+  font-weight:bold
+}
+.recherche {
+  background:var(--rose);
+  padding:20px 5%
+}
+.recherche p {
+  margin:0;
+  color:rgba(255,255,255,.6);
+  font-size:1.6em;
+  letter-spacing:2px
+}
+main {
+  width:80%;
+  margin:0 auto;
+  padding:75px 0 50px
+}
+.titre {
+  border:1px dashed var(--bleu);
+  border-bottom:0;
+  padding:30px 0 40px;
+  text-align:center
+}
+main h2 {
+  margin:0;font-size:1.8em;color:var(--bleu)
+}
+main h3 {
+  font-size:1.2em
+}
+.texte {
+  margin:40px 25px;
+  line-height:1.8
+}
+.serveurs {
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:50px;
+  margin:0 25px
+}
+.serveurs .offre,.serveurs .bloc {
+  flex:1;transition:opacity .3s
+}
+.serveurs:hover>:not(:hover) {
+  opacity:.5
+}
+.offre {
+  border:1px dashed var(--bleu);
+  padding:10px;
+  text-align:center
+}
+.offre h3 {
+  margin:0;padding:30px 10px;
+  background:var(--bleu);color:#fff;
+  font-size:1.2em
+}
+.intro-offre {
+  margin:20px 0 0
+}
+.offre ul {
+  list-style:circle;
+  text-align:left;
+  margin:20px 0;
+  padding-left:60px;
+  font-size:.9em
+}
+.offre li{
+  line-height:36px
+}
+.prix{
+  margin:35px 0 30px;
+  font-size:1.1em
+}
+.commander{
+  display:block;
+  padding:15px;
+  background:var(--rose);
+  color:#fff
+}
+.blocs{
+  display:flex;
+  justify-content:space-between;
+  gap:50px;
+  margin:50px 0 70px;
+  padding:0 15px
+}
+.bloc{
+  flex:1;
+  text-align:center
+}
+.bloc i {
+  font-size:3em;
+  color:var(--rose)
+}
+.bloc h3 {
+  margin:30px 0 20px;
+  color:var(--rose)
+}
+.bloc p {
+  text-align:left;
+  line-height:1.8;
+  font-size:.9em;
+  margin:0 0 15px 0
+}
+.bloc .prix-accueil {
+  text-align:center;
+  margin:0 0 25px;
+  color:var(--rose);
+  font-size:1.3em
+}
+.contacts {
+  display:flex;
+  justify-content:space-between;
+  gap:50px;
+  margin:60px 25px 50px
+}
+.contact {
+  flex:1;
+  text-align:center
+}
+.contact i {
+  display:block;
+  padding-bottom:30px;
+  border-bottom:1px dashed var(--rose);
+  font-size:3em;
+  color:var(--rose)
+}
+.contact p,.contact address{
+  margin:30px 0 0;
+  line-height:1.8
+}
+.contact a{
+  color:var(--rose)
+}
+abbr{
+  color:var(--gris)
+}
+.carte{
+  margin:0;
+  border:1px dashed var(--gris);
+  height:500px
+}
+.carte iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block
+}
+footer {
+  background:var(--bleu);
+  padding:60px 5% 180px
+}
+footer ul {
+  display:flex;
+  justify-content:space-between;
+  margin:0;padding:0;
+  list-style:none
+}
+footer a {
+  color:#fff;
+  font-size:1em
+}
+@media (max-width:768px){
+.barre {
+  flex-direction:column;
+  padding:30px 5%
+}
+header nav {
+  margin:30px 0 0
+}
+header nav ul {
+  flex-direction:column;
+  align-items:center;
+  gap:25px
+}
+.hero {
+  min-height:360px
+}
+header h1 {
+  font-size:2.2em
+}
+header p{
+  font-size:1.5em
+}
+main{
+  width:90%;
+  padding:50px 0 40px
+}
+.serveurs,.blocs,.contacts{
+  flex-direction:column;
+  align-items:stretch;
+  gap:35px;
+  margin-left:0;
+  margin-right:0
+}
+.carte{
+  height:350px
+}
+footer ul{
+  flex-direction:column;
+  align-items:center;
+  gap:25px
+}
+footer {
+  padding:50px 5% 120px
+}
+}
